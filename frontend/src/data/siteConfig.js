@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "Your luxury partner for unforgettable weddings. From majestic venues to gourmet catering and exquisite decor, we bring your dream wedding to life.",
   phone: '+91 9167455566',
-  whatsapp: '919167455566',
+  whatsapp: '+91 9167455566',
   email: 'hello@theweddingbellsbytimsis.co.in',
   address: 'Mumbai, India',
   hours: 'Mon – Sat: 10:00 AM – 7:30 PM',
