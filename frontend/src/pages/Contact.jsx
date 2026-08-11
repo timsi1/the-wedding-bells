@@ -93,7 +93,7 @@ export default function Contact() {
                         required
                         value={form.phone}
                         onChange={handleChange}
-                        placeholder="98765 43210"
+                        //placeholder=
                       />
                     </div>
                   </div>
