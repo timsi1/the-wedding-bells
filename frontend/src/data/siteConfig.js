@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: 'Crafting Your Forever Moments',
   description:
     "Your luxury partner for unforgettable weddings. From majestic venues to gourmet catering and exquisite decor, we bring your dream wedding to life.",
-  phone: '+91 9167455566',
+  phone: '+91 7039933565',
   // Digits only with country code — wa.me breaks on "+91 …" formatting
   whatsapp: '917039933565',
   email: 'hello@theweddingbellsbytimsis.co.in',
@@ -12,7 +12,7 @@ export const siteConfig = {
   hours: 'Mon – Sat: 10:00 AM – 7:30 PM',
   social: {
     instagram: 'https://www.instagram.com/weddingbells_tiimsii?igsh=MWkzZ2RzYXE1aWtxeg==',
-    youtube: 'https://youtube.com',
+    youtube: 'http://www.youtube.com/@Weddingbells_tiimsii',
     facebook: 'https://facebook.com',
   },
   stats: [
