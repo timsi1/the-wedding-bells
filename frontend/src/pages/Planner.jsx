@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Check, ChevronLeft, ChevronRight, Send, ChevronDown } from 'lucide-react'
 import axios from 'axios'
 import PageHeader from '../components/PageHeader.jsx'
-import { siteConfig } from '../data/siteConfig.js'
+import { siteConfig, whatsappUrl } from '../data/siteConfig.js'
 import './Planner.css'
 
 const API_URL = import.meta.env.VITE_API_URL || 'https://theweddingbells.onrender.com'
@@ -101,12 +101,11 @@ export default function Planner() {
       description,
     ].join('\n')
 
-    return `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(msg)}`
+    return whatsappUrl(msg)
   }
 
   function handleSubmit() {
-    const url = buildWhatsAppMessage()
-    window.open(url, '_blank')
+    window.open(buildWhatsAppMessage(), '_blank')
   }
 
   const stepTitles = ['Select Services', 'Your Details', 'Describe Your Vision', 'Review & Send']

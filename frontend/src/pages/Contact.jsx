@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { CheckCircle2, Clock, Mail, MapPin, Phone, Send, MessageCircle } from 'lucide-react'
 import PageHeader from '../components/PageHeader.jsx'
-import { siteConfig } from '../data/siteConfig.js'
+import { siteConfig, whatsappUrl } from '../data/siteConfig.js'
 import { serviceCategories } from '../data/servicesData.js'
 import './Contact.css'
 
@@ -57,8 +57,7 @@ export default function Contact() {
       form.message,
     ].join('\n')
 
-    const url = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(msg)}`
-    window.open(url, '_blank')
+    window.open(whatsappUrl(msg), '_blank')
   }
 
   return (
@@ -195,7 +194,7 @@ export default function Contact() {
             {/* Quick Actions */}
             <div className="contact-quick-actions">
               <a
-                href={`https://wa.me/${siteConfig.whatsapp}`}
+                href={whatsappUrl()}
                 target="_blank"
                 rel="noreferrer"
                 className="contact-quick-btn whatsapp"

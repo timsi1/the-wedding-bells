@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { siteConfig } from '../data/siteConfig.js'
+import { siteConfig, whatsappUrl } from '../data/siteConfig.js'
 import './Footer.css'
 
 /* App-style rounded square WhatsApp icon */
@@ -53,7 +53,7 @@ export default function Footer() {
           </Link>
           <p className="footer-about-text">{siteConfig.description}</p>
           <div className="footer-social">
-            <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <a href={whatsappUrl()} target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <WhatsappIcon />
             </a>
             <a href={siteConfig.social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
